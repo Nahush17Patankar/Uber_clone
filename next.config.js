@@ -1,13 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: 'export',
+  distDir: 'build', // Use the correct property for output directory
+  ignoreBuildErrors: true, // Use the correct property for ignoring build errors
+};
 
-  javascript: {
-    ignoreBuildErrors: true,
-    
-  }
-
-}
-
-module.exports = nextConfig
+module.exports = nextConfig;
